@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Noelville braucht deine Hilfe – Mathe-Adventskalender</title>
+  <meta name="description" content="Mathe-Adventskalender zur Vorbereitung auf die MSA-Prüfung: Finde jeden Tag im Advent einen goldenen Stern, indem du ein Matherätsel löst – und rette das Weihnachtsfest in Noelville.">
+  <link rel="icon" href="bilder/stern.webp">
+  <link rel="stylesheet" href="css/style.css?v=13">
+</head>
+<body>
+  <header class="kopf">
+    <h1 class="logo" id="logo">Noelville braucht deine Hilfe</h1>
+    <div class="kopf-rechts">
+      <span class="sterne-anzeige" id="sterne"></span>
+      <a class="knopf wissen-knopf" href="wissen.html"><img src="bilder/dohle.webp" alt=""> Wissen</a>
+      <a class="knopf profil-knopf" href="profil.html"><img src="bilder/elf.webp" alt=""> <span id="profil-name">Profil</span></a>
+    </div>
+  </header>
+
+  <div class="vorstellung">
+    <p>Dieser Adventskalender dient der Vorbereitung auf die MSA-Prüfung in Mathematik. Er ist ein Lernmittel zum Üben und garantiert keinen Erfolg in der MSA-Prüfung. Hinter jedem Türchen wartet eine Aufgabe, die sich an früheren Prüfungsaufgaben orientiert. Erklärungen zu allen Themen findest du im Wissensbuch der Alpendohle.</p>
+  </div>
+
+  <details class="story" id="story" open>
+    <summary>Die Geschichte</summary>
+    <p>Im Weihnachtsdorf <b>Noelville</b> in den Alpen feiern alle Bewohner jedes Jahr an Weihnachten ein großes gemeinsames Dorffest. Doch dieses Jahr läuft alles schief: Die <b>goldenen Stern-Dekorationen</b>, die das Fest erst magisch machen, sind spurlos verschwunden!</p>
+    <p>Die Bewohner brauchen deine Hilfe. Hinter jedem Türchen wartet ein Rätsel. Löst du es, findest du den goldenen Stern des Tages. Wer auch das schwierigere Bonus-Rätsel schafft, bekommt eine Schneeflocke dazu. Geht ein Stern verloren, kann der Sterngiek im <b>Sternenhuus</b> einen neuen herstellen. <b>Sammle bis zum 24. Dezember alle 24 Sterne und rette das Weihnachtsfest!</b></p>
+  </details>
+
+  <p class="info-zeile" id="info"></p>
+
+  <main class="szene-rahmen" id="szene-rahmen">
+    <svg id="szene" role="group" aria-label="Wimmelbild des Weihnachtsdorfs Noelville mit 24 Türchen und dem Sternenhuus" xmlns="http://www.w3.org/2000/svg"></svg>
+  </main>
+  <p class="wisch-hinweis">↔ Wische, um das ganze Bild zu sehen</p>
+
+  <p class="fuss">Dein Fortschritt bleibt nur in diesem Browser gespeichert. Es gibt kein Konto und kein Tracking.<br>Sichere deinen Fortschritts-Code im <a href="profil.html#code">Profil</a>, damit du beim nächsten Mal weitermachen kannst.<br><a href="impressum.html">Impressum und Datenschutz</a></p>
+
+  <script src="js/daten.js?v=13"></script>
+  <script src="js/app.js?v=13"></script>
+  <script src="js/kalender.js?v=13"></script>
+</body>
+</html>

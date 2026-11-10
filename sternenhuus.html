@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sternenhuus – Noelville braucht deine Hilfe</title>
+  <link rel="icon" href="bilder/stern.webp">
+  <!-- KaTeX für Formeln, liegt lokal im Projekt: Es wird nichts von fremden Servern geladen. -->
+  <link rel="stylesheet" href="katex/katex.min.css">
+  <script defer src="katex/katex.min.js"></script>
+  <script defer src="katex/auto-render.min.js"></script>
+  <link rel="stylesheet" href="css/style.css?v=13">
+</head>
+<body>
+  <header class="kopf">
+    <a class="zurueck" href="index.html">← Zum Kalender</a>
+    <div class="kopf-rechts">
+      <span class="sterne-anzeige" id="sterne"></span>
+      <a class="knopf wissen-knopf" href="wissen.html"><img src="bilder/dohle.webp" alt=""> Wissen</a>
+    </div>
+  </header>
+
+  <main class="inhalt">
+    <div class="huus-kopf">
+      <h1>Das Sternenhuus</h1>
+      <p>Hier stellt der Sterngiek aus Sternenstaub neue goldene Sterne her.</p>
+    </div>
+
+    <section class="karte" id="status"></section>
+
+    <section class="karte">
+      <h2 style="margin-top:0">Wähle ein Themenfeld</h2>
+      <div class="themenfelder" id="themenfelder"></div>
+    </section>
+
+    <section class="karte" id="uebung" hidden></section>
+  </main>
+  <p class="fuss"><a href="impressum.html">Impressum und Datenschutz</a></p>
+
+  <script defer src="js/daten.js?v=13"></script>
+  <script defer src="js/app.js?v=13"></script>
+  <script defer src="js/sternenhuus.js?v=13"></script>
+</body>
+</html>

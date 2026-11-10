@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mein Profil – Noelville braucht deine Hilfe</title>
+  <link rel="icon" href="bilder/stern.webp">
+  <link rel="stylesheet" href="css/style.css?v=13">
+</head>
+<body>
+  <header class="kopf">
+    <a class="zurueck" href="index.html">← Zum Kalender</a>
+    <div class="kopf-rechts">
+      <span class="sterne-anzeige" id="sterne"></span>
+      <a class="knopf wissen-knopf" href="wissen.html"><img src="bilder/dohle.webp" alt=""> Wissen</a>
+    </div>
+  </header>
+
+  <main class="inhalt">
+    <section class="karte">
+      <div class="profil-kopf">
+        <div class="avatar" aria-hidden="true"><img src="bilder/elf.webp" alt=""></div>
+        <div>
+          <label for="name">Dein Spitzname</label>
+          <input id="name" type="text" maxlength="24" placeholder="z. B. Rechenwichtel" autocomplete="off">
+          <p class="klein">Bitte nicht deinen echten Namen. Der Spitzname bleibt nur auf diesem Gerät.</p>
+        </div>
+      </div>
+      <div class="statistik">
+        <div class="stat"><b id="stat-sterne">0</b><span>goldene Sterne</span></div>
+        <div class="stat"><b id="stat-flocken">0</b><span>Schneeflocken</span></div>
+        <div class="stat"><b id="stat-tueren">0</b><span>Türchen geschafft</span></div>
+        <div class="stat"><b id="stat-badges">0</b><span>Abzeichen</span></div>
+      </div>
+      <div id="naechstes"></div>
+    </section>
+
+    <section class="karte">
+      <h2 style="margin-top:0">Abzeichen</h2>
+      <div class="badge-raster" id="badges"></div>
+    </section>
+
+    <section class="karte" id="code">
+      <h2 style="margin-top:0">Fortschritt sichern</h2>
+      <p class="klein">Dein Fortschritt bleibt nur in diesem Browser gespeichert. Wenn du die Browserdaten löschst, im privaten Modus surfst oder ein anderes Gerät nutzt, ist er weg. Kopiere deshalb deinen Fortschritts-Code und speichere ihn irgendwo ab, z. B. in deinen Notizen. Beim nächsten Mal fügst du ihn unten wieder ein.</p>
+      <label for="code-export"><b>Dein Fortschritts-Code</b></label>
+      <textarea id="code-export" class="code" readonly rows="3"></textarea>
+      <div class="knopf-reihe"><button type="button" class="knopf zweitrangig" id="kopieren">📋 Code kopieren</button></div>
+
+      <label for="code-import" style="display:block;margin-top:16px"><b>Gespeicherten Code wieder einfügen</b></label>
+      <textarea id="code-import" class="code" rows="3" placeholder="ADV1-…"></textarea>
+      <div class="knopf-reihe"><button type="button" class="knopf haupt" id="laden">Fortschritt laden</button></div>
+    </section>
+
+    <section class="karte">
+      <h2 style="margin-top:0">Neu anfangen</h2>
+      <p class="klein">Löscht alle Sterne, Schneeflocken, Abzeichen, den Sternenstaub und deinen Spitznamen auf diesem Gerät.</p>
+      <button type="button" class="knopf warnung" id="zuruecksetzen">Alles zurücksetzen</button>
+    </section>
+  </main>
+  <p class="fuss"><a href="impressum.html">Impressum und Datenschutz</a></p>
+
+  <script src="js/daten.js?v=13"></script>
+  <script src="js/app.js?v=13"></script>
+  <script src="js/profil.js?v=13"></script>
+</body>
+</html>

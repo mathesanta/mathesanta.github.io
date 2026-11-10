@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Wissensbuch der Alpendohle – Noelville braucht deine Hilfe</title>
+  <link rel="icon" href="bilder/dohle.webp">
+  <!-- KaTeX für Formeln, liegt lokal im Projekt: Es wird nichts von fremden Servern geladen. -->
+  <link rel="stylesheet" href="katex/katex.min.css">
+  <script defer src="katex/katex.min.js"></script>
+  <script defer src="katex/auto-render.min.js"></script>
+  <link rel="stylesheet" href="css/style.css?v=13">
+</head>
+<body>
+  <header class="kopf">
+    <a class="zurueck" id="zurueck" href="index.html">← Zum Kalender</a>
+    <div class="kopf-rechts">
+      <span class="sterne-anzeige" id="sterne"></span>
+    </div>
+  </header>
+
+  <main class="inhalt">
+    <div class="wissen-kopf">
+      <img src="bilder/dohle.webp" alt="Die Alpendohle">
+      <div>
+        <h1>Wissensbuch der Alpendohle</h1>
+        <p>Die wichtigsten Regeln und Formeln für die MSA-Prüfung – kurz erklärt.</p>
+      </div>
+    </div>
+
+    <div class="suche">
+      <label class="sr-only" for="suche">Wissensbuch durchsuchen</label>
+      <input id="suche" type="search" placeholder="Suchen, z. B. Pythagoras, Median, Kegel …" autocomplete="off">
+    </div>
+    <div class="bereich-filter" id="filter" role="group" aria-label="Nach Themenbereich filtern"></div>
+    <p class="treffer-info" id="treffer" aria-live="polite"></p>
+    <div id="artikel-liste"></div>
+  </main>
+  <p class="fuss"><a href="impressum.html">Impressum und Datenschutz</a></p>
+
+  <script defer src="js/daten.js?v=13"></script>
+  <script defer src="js/app.js?v=13"></script>
+  <script defer src="js/wissen.js?v=13"></script>
+  <script defer src="js/wissen-seite.js?v=13"></script>
+</body>
+</html>
